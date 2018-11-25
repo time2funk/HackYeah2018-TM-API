@@ -1,0 +1,111 @@
+{
+    "endpoints": {
+        "GET": [
+            {
+                "path": "/-/api/vehicles"
+            },
+            {
+                "path": "/-/api/vertices"
+            },
+            {
+                "path": "/-/api/edges"
+            },
+            {
+                "path": "/-/api/stations"
+            }
+        ],
+        "POST": [
+            {
+                "path": "/-/api/vehicle",
+                "exampleQuery": {
+                    "id": "Bus", 
+                    "width": 4000, 
+                    "heigth": 3000, 
+                    "length": 6000
+                },
+                "exampleQuery2": {
+                    "id": "Car", 
+                    "width": 2000, 
+                    "heigth": 1000, 
+                    "length": 4000
+                }
+            },
+            {
+                "path": "/-/api/vertex",
+                "exampleQuery": {
+                    "id": "v2", 
+                    "x": 39.858478546115634, 
+                    "y": 32.36071777348468, 
+                    "lat": 52.5947591752622,
+                    "lon": 19.6569572183123
+                }
+            },
+            {
+                "path": "/-/api/vertices",
+                "exampleQuery": {
+                    "list": [
+                        {
+                            "id": "v2", 
+                            "x": 39.858478546115634, 
+                            "y": 32.36071777348468, 
+                            "lat": 52.5947591752622,
+                            "lon": 19.6569572183123
+                        }, {}, {}
+                    ]
+                }
+            },
+            {
+                "path": "/-/api/edge",
+                "exampleQuery": {
+                    "id": "e7", 
+                    "width": 8765, 
+                    "heigth": -1, 
+                    "available": true,
+                    "direction": 0,
+                    "vertex": {
+                        "first":  "v1",
+                        "second": "v2"
+                    }
+                }
+            },
+            {
+                "path": "/-/api/edges",
+                "exampleQuery": {
+                    "list": [
+                        {
+                            "id": "e7", 
+                            "width": 8765, 
+                            "heigth": -1, 
+                            "available": true,
+                            "direction": 0,
+                            "vertex": {
+                                "first":  "v1",
+                                "second": "v2"
+                            }
+                        }, {}, {}
+                    ]
+                }
+            },
+            {
+                "path": "/-/api/station",
+                "exampleQuery": {
+                    "id": "s07",
+                    "edge": "e3",
+                    "vertex": "v2"
+                }
+            },
+            {
+                "path": "/-/api/stations",
+                "exampleQuery": {
+                    "list": [
+                        {
+                            "id": "s07",
+                            "edge": "e3",
+                            "vertex": "v2"
+                        }, {}, {}
+                    ]
+                }
+            }
+        ]
+    }
+}

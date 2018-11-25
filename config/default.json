@@ -1,0 +1,9 @@
+{
+    "server": {
+        "host": "",
+        "port": "5433"
+    },    
+    "db": {
+        "uri": "mongodb://localhost:27017/hackyeahTM"
+    }
+}

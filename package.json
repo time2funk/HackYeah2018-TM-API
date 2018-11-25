@@ -1,0 +1,25 @@
+{
+  "name": "hackyeah-2018-tm-server",
+  "version": "1.0.0",
+  "description": "Server side for Transportation Management (Hack Yeah 2018)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-dev": "DEBUG=* node index.js"
+  },
+  "keywords": [
+    "node.js",
+    "hackyeach",
+    "MonsterCollab"
+  ],
+  "author": "Mykyta Lazariev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "config": "^3.0.0",
+    "cors": "^2.8.5",
+    "debug": "^4.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.13"
+  }
+}
