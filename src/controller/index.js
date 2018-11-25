@@ -52,10 +52,10 @@ const postVertex = (req, res) => {
     const lat = parseFloat(req.body.lat);
     const lon = parseFloat(req.body.lon);
 
-    if (!(id && x && y && lat & lon)) {
-        res.send("Wrong params");
-        res.status(400).end();
-    }
+    // if (!(id && x && y && lat & lon)) {
+    //     res.send("Wrong params");
+    //     res.status(400).end();
+    // }
     DBService.class.vertex.insert(id, x, y, lat, lon).then(result => {
         res.send({result: result});
     }).catch(e => {
@@ -174,10 +174,10 @@ const postVehicle = (req, res) => {
     const heigth = req.body.heigth;
     const length = req.body.length;
 
-    if (!(id && width && heigth & length)) {
-        res.send("Wrong params");
-        res.status(400).end();
-    }
+    // if (!(id && width && heigth & length)) {
+    //     res.send("Wrong params");
+    //     res.status(400).end();
+    // }
     DBService.class.vehicle.insert(id, width, heigth, length).then(result => {
         res.send({result: result});
     }).catch(e => {
@@ -204,10 +204,10 @@ const postVehicles = (req, res) => {
                 const heigth = req.item;
                 const length = req.item;
 
-                if (!(id && width && heigth & length)) {
-                    res.send("Wrong params");
-                    res.status(400).end();
-                }
+                // if (!(id && width && heigth & length)) {
+                //     res.send("Wrong params");
+                //     res.status(400).end();
+                // }
                 DBService.class.vehicle.insert(id, width, heigth, length).then(result => {
                     results.push(result)
                 }).catch(e => {
@@ -261,10 +261,10 @@ const postStations = (req, res) => {
                 const edge = item.edge;
                 const vertex = item.vertex;
 
-                if (!(id && width && heigth & length)) {
-                    res.send("Wrong params");
-                    res.status(400).end();
-                }
+                // if (!(id && width && heigth & length)) {
+                //     res.send("Wrong params");
+                //     res.status(400).end();
+                // }
                 DBService.class.station.insert(id, edge, vertex).then(station => {
                     results.push(station);
                 }).catch(e => {
