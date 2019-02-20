@@ -2,7 +2,6 @@
 
 [ Node.js, Express, Mongoose ] :shipit:
 
-> HackYeah 2018 - Monster Collab
 
 ## Build Setup
 
